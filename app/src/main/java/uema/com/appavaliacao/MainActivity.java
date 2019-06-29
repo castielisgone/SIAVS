@@ -12,9 +12,6 @@ import android.widget.Toast;
 
 import java.util.Optional;
 
-import uema.com.appavaliacao.dao.RespostasDAO;
-import uema.com.appavaliacao.modelo.Respostas;
-
 public class MainActivity extends AppCompatActivity {
 
     /*protected void onCreate(Bundle savedInstanceState) {
@@ -54,15 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void chamaInserir(Respostas resposta){
 
-        //Criação da classe de acesso aos dados(DAO)
-        RespostasDAO respostasDao = new RespostasDAO(this);
-        //Em seguida, passa-se o objeto Resposta por parâmetro
-        respostasDao.insere(resposta);
-    }
-
-    public String addListenerOnButton( ) {
+     public String addListenerOnButton( ) {
         Button btnSalvar = (Button) findViewById(R.id.btnEnviar);
         String  erro = "";
         btnSalvar.setOnClickListener(new View.OnClickListener() {
@@ -73,22 +63,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radGrp1);
                 RadioButton radio;
+                boolean valido = true;
 
-                //Recupera o id do radioGroup que está selecionado no RadioGroup
+                // get selected radio button from radioGroup
                 int selectedId = radioGroup.getCheckedRadioButtonId();
 
                 if(selectedId != 0 && selectedId != -1){
-                    // Recupera o radiobutton que estiver selecionado no RadioGroup em questão
+                    // find the radiobutton by returned id
 
                     radio = (RadioButton) findViewById(selectedId);
-                    System.out.println(radio.getText());
-                    //Criação do objeto Pergunta, a fim de associar à pergunta enviada da View
-                    //Após isso, seta com o texto recuperado a partir do radiobutton em questão
-                    Respostas resposta = new Respostas();
-                    resposta.setResposta1(radio.getText());
-                    chamaInserir(resposta);
-
-
                     Toast.makeText(MainActivity.this, radio.getText(), Toast.LENGTH_SHORT).show();
 
                 }
