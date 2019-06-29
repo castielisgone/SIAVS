@@ -1,0 +1,57 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent" android:background="@color/colorHome"
+
+tools:context="uema.com.appavaliacao.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="157dp"
+        android:layout_height="185dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:contentDescription="LuizQuiz"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnJogar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.724"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:srcCompat="@drawable/img_inicial"
+         />
+
+    <Button
+        android:id="@+id/btnJogar"
+        android:layout_width="269dp"
+        android:layout_height="48dp"
+        android:onClick="btnJogarOnClick"
+        android:text="Avaliação"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="464dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:text="Listar"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="540dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="256dp"
+        android:layout_height="37dp"
+        android:text="Avaliação de Merda"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+
+</android.support.constraint.ConstraintLayout>
