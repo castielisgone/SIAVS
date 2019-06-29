@@ -1,13 +1,11 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorPrimary"
-        tools:context=".TelaAvaliacao">
+    tools:context=".tela_inicio">
+
 
         <TextView
             android:id="@+id/textView6"
@@ -24,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="sans-serif-condensed-medium"
             android:text="Sistema de Avaliação - SIAVAL"
             android:textAlignment="textStart"
@@ -36,10 +34,10 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_marginLeft="45dp"
-            android:layout_marginTop="90dp"
             android:layout_width="279dp"
             android:layout_height="304dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="75dp"
             app:srcCompat="@drawable/rating"
             tools:layout_editor_absoluteX="66dp"
             tools:layout_editor_absoluteY="169dp" />
@@ -50,11 +48,11 @@
             android:layout_width="153dp"
             android:layout_height="40dp"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="400dp"
+            android:layout_marginTop="375dp"
             android:background="@color/colorPrimaryDark"
-            android:textColor="@color/branco"
-            android:text="Iniciar Avaliação"
             android:onClick="iniciaAvaliacao"
+            android:text="Iniciar Avaliação"
+            android:textColor="@color/branco"
             tools:layout_editor_absoluteX="129dp"
             tools:layout_editor_absoluteY="508dp" />
 
@@ -63,10 +61,10 @@
             android:layout_width="157dp"
             android:layout_height="38dp"
             android:layout_marginLeft="96dp"
-            android:layout_marginTop="450dp"
+            android:layout_marginTop="425dp"
             android:background="@color/colorPrimaryDark"
-            android:textColor="@color/branco"
             android:text="Listar Avaliações"
+            android:textColor="@color/branco"
             tools:layout_editor_absoluteX="129dp"
             tools:layout_editor_absoluteY="570dp" />
 
@@ -75,11 +73,10 @@
             android:layout_width="wrap_content"
             android:layout_height="39dp"
             android:layout_marginLeft="130dp"
-            android:layout_marginTop="498dp"
+            android:layout_marginTop="473dp"
             android:background="@color/colorPrimaryDark"
-            android:textColor="@color/branco"
             android:text="Sair"
+            android:textColor="@color/branco"
             tools:layout_editor_absoluteX="161dp"
             tools:layout_editor_absoluteY="626dp" />
     </RelativeLayout>
-</ScrollView>
