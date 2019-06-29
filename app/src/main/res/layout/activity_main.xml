@@ -1,415 +1,57 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent" android:background="@color/colorHome"
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
+tools:context="uema.com.appavaliacao.MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="157dp"
+        android:layout_height="185dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:contentDescription="LuizQuiz"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnJogar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.724"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:srcCompat="@drawable/img_inicial"
+         />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            android:text="Avaliação da Graduação"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnJogar"
+        android:layout_width="269dp"
+        android:layout_height="48dp"
+        android:onClick="btnJogarOnClick"
+        android:text="Avaliação"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="464dp" />
 
-        <TextView
-            android:id="@+id/txtQ1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="60dp"
-            android:layout_weight="1"
-            android:text="1) Questão 1"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:text="Listar"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="540dp" />
 
-        <TextView
-            android:id="@+id/txtQ2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="200dp"
-            android:layout_weight="1"
-            android:text="2) Questão 2"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-
-        <TextView
-            android:id="@+id/txtQ3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="325dp"
-            android:text="3) Questão 3"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txtQ4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="440dp"
-            android:text="4) Questão 4"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txtQ5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="5) Questão 5"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="570dp"/>
-
-        <TextView
-            android:id="@+id/txtQ6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="6) Questão 6"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="695dp"/>
-
-        <TextView
-            android:id="@+id/txtQ7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="7) Questão 7"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="820dp"/>
-
-        <TextView
-            android:id="@+id/txtQ8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="945dp"
-            android:text="8) Questão 8"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txtQ9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="1065dp"
-            android:text="9) Questão 9"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txtQ10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="1185dp"
-            android:text="10) Questão 10"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="256dp"
+        android:layout_height="37dp"
+        android:text="Avaliação de Merda"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="139dp" />
 
 
-        <RadioGroup
-            android:id="@+id/radGrp1"
-            android:layout_width="348dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="90dp">
-
-            <RadioButton
-                android:id="@+id/btnRuim1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Ruim" />
-
-            <RadioButton
-                android:id="@+id/btnMed1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Médio" />
-
-            <RadioButton
-                android:id="@+id/btnBom1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Bom" />
-
-
-        </RadioGroup>
-
-        <RadioGroup
-            android:id="@+id/radGrp2"
-            android:layout_width="346dp"
-            android:layout_height="81dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="230dp">
-
-            <RadioButton
-                android:id="@+id/btnRuim2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Ruim" />
-
-            <RadioButton
-                android:id="@+id/btnMed2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Médio" />
-
-            <RadioButton
-                android:id="@+id/btnBom2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Bom" />
-        </RadioGroup>
-
-        <RadioGroup
-            android:id="@+id/radGrp3"
-            android:layout_width="347dp"
-            android:layout_height="75dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="350dp">
-
-            <RadioButton
-                android:id="@+id/btnRuim3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Ruim" />
-
-            <RadioButton
-                android:id="@+id/btnMed3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Médio" />
-
-            <RadioButton
-                android:id="@+id/btnBom3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Bom" />
-        </RadioGroup>
-
-        <RadioGroup
-            android:id="@+id/radGrp4"
-            android:layout_width="334dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="470dp">
-
-            <RadioButton
-                android:id="@+id/btnRuim4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Ruim" />
-
-            <RadioButton
-                android:id="@+id/btnMed4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Médio" />
-
-            <RadioButton
-                android:id="@+id/btnBom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bom" />
-        </RadioGroup>
-
-
-        <RadioGroup
-            android:id="@+id/radGrp5"
-            android:layout_width="339dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="595dp">
-
-            <RadioButton
-                android:id="@+id/btnRuim5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ruim" />
-
-            <RadioButton
-                android:id="@+id/btnMed5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Médio" />
-
-            <RadioButton
-                android:id="@+id/btnBom5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bom" />
-        </RadioGroup>
-
-
-
-        <RadioGroup
-            android:id="@+id/radGrp6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="720dp">
-
-            <RadioButton
-                android:id="@+id/btnRuim6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ruim" />
-
-            <RadioButton
-                android:id="@+id/btnMed6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Médio" />
-            <RadioButton
-                android:id="@+id/btnBom6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bom" />
-        </RadioGroup>
-
-        <RadioGroup
-            android:id="@+id/radGrp7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="845dp">
-
-         <RadioButton
-             android:id="@+id/btnRuim7"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="Ruim"  />
-
-         <RadioButton
-             android:id="@+id/btnMed7"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="Médio" />
-          <RadioButton
-              android:id="@+id/btnBom7"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Bom"  />
-
-        </RadioGroup>
-
-        <RadioGroup
-            android:id="@+id/radGrp8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="966dp">
-
-         <RadioButton
-             android:id="@+id/btnRuim8"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="Ruim"  />
-
-          <RadioButton
-              android:id="@+id/btnMed8"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Médio" />
-           <RadioButton
-               android:id="@+id/btnBom8"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Bom"  />
-        </RadioGroup>
-
-       <RadioGroup
-           android:id="@+id/radGrp9"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_marginLeft="40dp"
-           android:layout_marginTop="1085dp">
-
-           <RadioButton
-               android:id="@+id/btnRuim9"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Ruim"  />
-
-           <RadioButton
-               android:id="@+id/btnMed9"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Médio" />
-           <RadioButton
-               android:id="@+id/btnBom9"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Bom"  />
-       </RadioGroup>
-
-        <RadioGroup
-            android:id="@+id/radGrp10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="1210dp">
-
-            <RadioButton
-                android:id="@+id/btnRuim10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ruim"  />
-
-            <RadioButton
-                android:id="@+id/btnMed10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Médio" />
-            <RadioButton
-                android:id="@+id/btnBom10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bom"  />
-        </RadioGroup>
-
-        <Button
-            android:id="@+id/btnEnviar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="87dp"
-            android:layout_marginTop="1340dp"
-            android:text="Enviar" />
-
-        <Button
-            android:id="@+id/btnSair"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="188dp"
-            android:layout_marginTop="1340dp"
-            android:text="Sair" />
-
-    </RelativeLayout>
-</ScrollView>
+</android.support.constraint.ConstraintLayout>
