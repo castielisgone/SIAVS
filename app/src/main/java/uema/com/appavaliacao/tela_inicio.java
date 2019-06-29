@@ -25,6 +25,15 @@ public class tela_inicio extends AppCompatActivity {
         });
 
 
+        Button listadados = (Button) findViewById(R.id.btnListar);
+        listadados.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(tela_inicio.this, tela_dados.class);
+                startActivity(intent);
+            }
+        });
+
         Button sair = (Button) findViewById(R.id.btnSair);
         sair.setOnClickListener(new View.OnClickListener() {
             @Override
