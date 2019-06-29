@@ -1,57 +1,170 @@
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent" android:background="@color/colorHome"
-
-tools:context="uema.com.appavaliacao.MainActivity">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="157dp"
-        android:layout_height="185dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:contentDescription="LuizQuiz"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/btnJogar"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.724"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:srcCompat="@drawable/img_inicial"
-         />
-
-    <Button
-        android:id="@+id/btnJogar"
-        android:layout_width="269dp"
-        android:layout_height="48dp"
-        android:onClick="btnJogarOnClick"
-        android:text="Avaliação"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="464dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="266dp"
-        android:layout_height="wrap_content"
-        android:text="Listar"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="540dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="256dp"
-        android:layout_height="37dp"
-        android:text="Avaliação de Merda"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="139dp" />
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1"
+            android:text="1) Questão 1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_weight="1"
+            android:text="2) Questão 2"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Avaliação da Graduação"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:text="3) Questão 3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:text="4) Questão 4"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="550dp"
+            android:text="Enviar" />
+
+        <RadioGroup
+            android:id="@+id/radBtn1"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="100dp">
+
+            <RadioButton
+                android:id="@+id/btnRuim1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ruim" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Médio" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bom" />
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radBtn1"
+            android:layout_width="346dp"
+            android:layout_height="81dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="250dp">
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ruim" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Médio" />
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bom" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radBtn3"
+            android:layout_width="347dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="400dp">
+
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ruim" />
+
+            <RadioButton
+                android:id="@+id/radioButton9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Médio" />
+
+            <RadioButton
+                android:id="@+id/radioButton11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bom" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="550dp"
+            android:text="Sair" />
+
+    </RelativeLayout>
+</ScrollView>

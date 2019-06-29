@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".TelaAvaliacao">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="136dp"
+            android:layout_marginTop="580dp"
+            android:text="Versão 1.0"
+            tools:layout_editor_absoluteX="171dp"
+            tools:layout_editor_absoluteY="696dp" />
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Sistema de Avaliação - SIAVAL"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="108dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="90dp"
+            android:layout_width="279dp"
+            android:layout_height="304dp"
+            app:srcCompat="@drawable/rating"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="169dp" />
+
+
+        <Button
+            android:id="@+id/btnIniciar"
+            android:layout_width="153dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="400dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/branco"
+            android:text="Iniciar Avaliação"
+            android:onClick="iniciaAvaliacao"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="508dp" />
+
+        <Button
+            android:id="@+id/btnListar"
+            android:layout_width="157dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="450dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/branco"
+            android:text="Listar Avaliações"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="570dp" />
+
+        <Button
+            android:id="@+id/btnSair"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="498dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/branco"
+            android:text="Sair"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="626dp" />
+    </RelativeLayout>
+</ScrollView>
