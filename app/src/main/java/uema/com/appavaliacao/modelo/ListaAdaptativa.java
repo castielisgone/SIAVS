@@ -15,51 +15,52 @@ import java.util.List;
 import uema.com.appavaliacao.R;
 
 
-//we need to extend the ArrayAdapter class as we are building an adapter
+
+//Extende de ArrayAdapter para adaptar nossa listView como queremos
 public class ListaAdaptativa extends ArrayAdapter<ImagemLista> {
 
-    //the list values in the List of type hero
-    List<ImagemLista> heroList;
+    //Lista com as imagens dos rostos
+    List<ImagemLista> lista;
 
-    //activity context
-    Context context;
+    //Contexto da activity
+    Context contexto;
 
-    //the layout resource file for the list items
-    int resource;
+    //Layout
+    int caminhoLayout;
 
-    //constructor initializing the values
-    public ListaAdaptativa(Context context, int resource, List<ImagemLista> lista) {
-        super(context, resource, lista);
-        this.context = context;
-        this.resource = resource;
-        this.heroList = lista;
+    //Inicializa o construtor, recebendo o contexto da activity, o layout e a lista que será adaptada no ImageView
+    public ListaAdaptativa(Context contexto, int caminhoLayout, List<ImagemLista> lista) {
+        super(contexto, caminhoLayout, lista);
+        this.contexto = contexto;
+        this.caminhoLayout = caminhoLayout;
+        this.lista = lista;
     }
 
     //this will return the ListView Item as a View
+    //Retorna um item do listView como um objeto View
     @NonNull
     @Override
     public View getView(final int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        //we need to get the view of the xml for our list item
-        //And for this we need a layoutinflater
-        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        //Para recuperar a view do XML para nosso listitem, usa-se o LayoutInflater
+        LayoutInflater layoutInflater = LayoutInflater.from(contexto);
 
-        //getting the view
-        View view = layoutInflater.inflate(resource, null, false);
+        //Recuperando a view, passando o layout
+        View view = layoutInflater.inflate(caminhoLayout, null, false);
 
-        //getting the view elements of the list from the view
+
+        //Recuperando a view dos elementos da lista direto da View
         ImageView imageView = view.findViewById(R.id.imageView);
         TextView textViewName = view.findViewById(R.id.textViewName);
-        //TextView segundoTextView = view.findViewById(R.id.segundoTextView);
 
-        //getting the hero of the specified position
-        ImagemLista imagem = heroList.get(position);
+        //Recuperando a posição da Imagem
+        ImagemLista imagem = lista.get(position);
 
-        //adding values to the list item
-        imageView.setImageDrawable(context.getResources().getDrawable(imagem.getImagem()));
+        //Dimensionando através do método setImageDrawable, recebendo a Activity da listagem, e as imagens e o texto(Ruim, bom ou médio)
+        imageView.setImageDrawable(contexto.getResources().getDrawable(imagem.getImagem()));
         textViewName.setText(imagem.getName());
 
-        //finally returning the view
+
         return view;
     }
 

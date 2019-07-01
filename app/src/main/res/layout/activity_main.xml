@@ -6,28 +6,38 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".Avaliacao">
 
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:layout_weight="1"
-            android:text="Avaliação da Graduação"
+            android:text="Avaliação de Satisfação"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textSize="23sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAviso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:text="Responda as perguntas de acordo com seu grau de satisfação"
+            android:textSize="10sp" />
+
 
         <TextView
             android:id="@+id/txtQ1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="72dp"
             android:layout_weight="1"
-            android:text="1) Questão 1"
+            android:text="1) Você conhece os objetivos desta empresa?"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -36,9 +46,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="185dp"
             android:layout_weight="1"
-            android:text="2) Questão 2"
+            android:text="2) Vê oportunidade de crescimento dentro da empresa?"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -48,8 +58,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="325dp"
-            android:text="3) Questão 3"
+            android:layout_marginTop="315dp"
+            android:text="3) Possui um superior direto que o auxilia de forma correta?"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -59,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="440dp"
-            android:text="4) Questão 4"
+            android:text="4) O tempo em que passa na empresa é o suficiente para realizar suas tarefas?"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -67,39 +77,39 @@
             android:id="@+id/txtQ5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5) Questão 5"
-            android:textSize="16sp"
-            android:textStyle="bold"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="570dp"/>
+            android:layout_marginTop="570dp"
+            android:text="5) Sente-se motivado/prazer em trabalhar na empresa?"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtQ6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="6) Questão 6"
-            android:textSize="16sp"
-            android:textStyle="bold"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="695dp"/>
+            android:layout_marginTop="695dp"
+            android:text="6) Você sente que trabalhar nesta empresa lhe faz bem em um âmbito geral?"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtQ7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="7) Questão 7"
-            android:textSize="16sp"
-            android:textStyle="bold"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="820dp"/>
+            android:layout_marginTop="820dp"
+            android:text="7) Ao terminar sua jornada e ir para casa, você se sente realizado profissionalmente?"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtQ8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="945dp"
-            android:text="8) Questão 8"
+            android:layout_marginTop="955dp"
+            android:text="8) Aprende coisas novas constantemente?"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -108,8 +118,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="1065dp"
-            android:text="9) Questão 9"
+            android:layout_marginTop="1070dp"
+            android:text="9) Acredita ter muita responsabilidade ou está satisfeito com as tarefas que realiza?"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -118,8 +128,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="1185dp"
-            android:text="10) Questão 10"
+            android:layout_marginTop="1200dp"
+            android:text="10) Você sente orgulho do que realiza na empresa e compartilha esses sentimento com seus amigos e família?"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -129,7 +139,7 @@
             android:layout_width="348dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="90dp">
+            android:layout_marginTop="93dp">
 
             <RadioButton
                 android:id="@+id/btnRuim1"
@@ -189,7 +199,7 @@
             android:layout_width="347dp"
             android:layout_height="75dp"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="350dp">
+            android:layout_marginTop="360dp">
 
             <RadioButton
                 android:id="@+id/btnRuim3"
@@ -218,7 +228,7 @@
             android:layout_width="334dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="470dp">
+            android:layout_marginTop="480dp">
 
             <RadioButton
                 android:id="@+id/btnRuim4"
@@ -246,7 +256,7 @@
             android:layout_width="339dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="595dp">
+            android:layout_marginTop="605dp">
 
             <RadioButton
                 android:id="@+id/btnRuim5"
@@ -268,13 +278,12 @@
         </RadioGroup>
 
 
-
         <RadioGroup
             android:id="@+id/radGrp6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="720dp">
+            android:layout_marginTop="730dp">
 
             <RadioButton
                 android:id="@+id/btnRuim6"
@@ -287,6 +296,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Médio" />
+
             <RadioButton
                 android:id="@+id/btnBom6"
                 android:layout_width="wrap_content"
@@ -299,24 +309,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="845dp">
+            android:layout_marginTop="855dp">
 
-         <RadioButton
-             android:id="@+id/btnRuim7"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="Ruim"  />
+            <RadioButton
+                android:id="@+id/btnRuim7"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Ruim" />
 
-         <RadioButton
-             android:id="@+id/btnMed7"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="Médio" />
-          <RadioButton
-              android:id="@+id/btnBom7"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Bom"  />
+            <RadioButton
+                android:id="@+id/btnMed7"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="Médio" />
+
+            <RadioButton
+                android:id="@+id/btnBom7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bom" />
 
         </RadioGroup>
 
@@ -325,74 +336,77 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="966dp">
+            android:layout_marginTop="975dp">
 
-         <RadioButton
-             android:id="@+id/btnRuim8"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="Ruim"  />
+            <RadioButton
+                android:id="@+id/btnRuim8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ruim" />
 
-          <RadioButton
-              android:id="@+id/btnMed8"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Médio" />
-           <RadioButton
-               android:id="@+id/btnBom8"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Bom"  />
+            <RadioButton
+                android:id="@+id/btnMed8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Médio" />
+
+            <RadioButton
+                android:id="@+id/btnBom8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bom" />
         </RadioGroup>
 
-       <RadioGroup
-           android:id="@+id/radGrp9"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_marginLeft="40dp"
-           android:layout_marginTop="1085dp">
+        <RadioGroup
+            android:id="@+id/radGrp9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="1105dp">
 
-           <RadioButton
-               android:id="@+id/btnRuim9"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Ruim"  />
+            <RadioButton
+                android:id="@+id/btnRuim9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ruim" />
 
-           <RadioButton
-               android:id="@+id/btnMed9"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Médio" />
-           <RadioButton
-               android:id="@+id/btnBom9"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Bom"  />
-       </RadioGroup>
+            <RadioButton
+                android:id="@+id/btnMed9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Médio" />
+
+            <RadioButton
+                android:id="@+id/btnBom9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bom" />
+        </RadioGroup>
 
         <RadioGroup
             android:id="@+id/radGrp10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="1210dp">
+            android:layout_marginTop="1260dp">
 
             <RadioButton
                 android:id="@+id/btnRuim10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ruim"  />
+                android:text="Ruim" />
 
             <RadioButton
                 android:id="@+id/btnMed10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Médio" />
+
             <RadioButton
                 android:id="@+id/btnBom10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bom"  />
+                android:text="Bom" />
         </RadioGroup>
 
         <Button
@@ -400,7 +414,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="87dp"
-            android:layout_marginTop="1340dp"
+            android:layout_marginTop="1380dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/branco"
             android:text="Enviar" />
 
         <Button
@@ -408,8 +424,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="188dp"
-            android:layout_marginTop="1340dp"
+            android:layout_marginTop="1380dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/branco"
             android:text="Sair" />
+
 
     </RelativeLayout>
 </ScrollView>

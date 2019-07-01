@@ -1,9 +1,8 @@
 package uema.com.appavaliacao.modelo;
 
-import java.util.ArrayList;
-
 public class Respostas {
 
+    //Decleração de variáveis
     private Long id;
     private CharSequence resposta1;
     private CharSequence resposta2;
@@ -15,18 +14,8 @@ public class Respostas {
     private CharSequence resposta8;
     private CharSequence resposta9;
     private CharSequence resposta10;
-    private ArrayList<Integer> listaIds;
 
-    public Integer getIds(int id) {
-
-
-        return  listaIds.get(id);
-    }
-
-    public void setIds(ArrayList<Integer> lista) {
-        this.listaIds = lista;
-    }
-
+    //Getters e Setters para cada um
     public Long getId() {
         return id;
     }
@@ -114,8 +103,6 @@ public class Respostas {
     public void setResposta10(CharSequence resposta10) {
         this.resposta10 = resposta10;
     }
-
-
 
 
 }

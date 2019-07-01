@@ -4,7 +4,8 @@
     android:background="@color/colorPrimary"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tela_inicio">
+    android:launchMode="singleTask"
+    tools:context=".TelaInicio">
 
 
         <TextView
@@ -21,13 +22,13 @@
             android:id="@+id/txtTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:fontFamily="sans-serif-condensed-medium"
-            android:text="Sistema de Avaliação - SIAVAL"
+            android:text="Sistema de Avaliação de Satisfação - SIAVS"
             android:textAlignment="textStart"
             android:textColor="@android:color/white"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="50dp"
             tools:layout_editor_absoluteY="108dp" />
@@ -51,6 +52,7 @@
             android:layout_marginTop="375dp"
             android:background="@color/colorPrimaryDark"
             android:onClick="iniciaAvaliacao"
+            android:clickable="false"
             android:text="Iniciar Avaliação"
             android:textColor="@color/branco"
             tools:layout_editor_absoluteX="129dp"
@@ -63,7 +65,7 @@
             android:layout_marginLeft="96dp"
             android:layout_marginTop="425dp"
             android:background="@color/colorPrimaryDark"
-            android:text="Listar Avaliações"
+            android:text="Verificar Estatísticas"
             android:textColor="@color/branco"
             tools:layout_editor_absoluteX="129dp"
             tools:layout_editor_absoluteY="570dp" />
